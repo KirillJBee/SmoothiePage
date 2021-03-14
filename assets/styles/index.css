@@ -1,0 +1,421 @@
+@font-face {
+    font-family: Muli-Bold;
+    src        : url(../fonts/Muli-Bold.ttf);
+}
+
+@font-face {
+    font-family: Muli;
+    src        : url(../fonts/Muli-Regular.woff);
+}
+
+@font-face {
+    font-family: Muli-ExtraBold;
+    src        : url(../fonts/Muli-ExtraBold.woff);
+}
+
+* {
+    padding   : 0px;
+    margin    : 0px;
+    border    : 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+header {
+    /*background-color: #f3af38;*/
+    background         : url(../images/images/header-bg-img.jpg);
+    width              : 100%;
+    max-width          : 1920px;
+    height             : 1080px;
+    background-size    : cover;
+    background-position: center;
+
+}
+
+.main-menu__list-item {
+    display: inline;
+}
+
+
+.header__top {
+    width          : 89%;
+    margin-top     : 69px;
+    margin-left    : 100px;
+    margin-right   : 100px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.main-menu {
+    width          : 31%;
+    height         : 11px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.main-menu__link {
+    width          : 31%;
+    height         : 11px;
+    display        : flex;
+    justify-content: space-between;
+    font-family    : Muli-Regular;
+    font-size      : 11px;
+    font-weight    : bold;
+    font-stretch   : normal;
+    font-style     : normal;
+    line-height    : 2.5;
+    letter-spacing : 0.32px;
+    text-align     : left;
+    color          : #ffffff;
+    text-decoration: none;
+    color          : white;
+    text-transform : uppercase;
+}
+
+
+
+/*<section class="smoothies">*/
+
+.smoothies {
+    background-color: white;
+    width           : 100%;
+    max-width       : 1920px;
+    height          : 870px;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : space-between;
+}
+
+.smoothies__header {
+    font-family   : Muli;
+    font-size     : 50px;
+    font-weight   : 800;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 0.8;
+    letter-spacing: -1px;
+    text-align    : center;
+    color         : #f7ae3b;
+    margin-top    : 98px;
+}
+
+.smoothies__paragraph {
+    margin-top    : 35px;
+    font-family   : Muli;
+    font-size     : 18px;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.94;
+    letter-spacing: normal;
+    text-align    : center;
+    width         : 915px;
+    height        : 140px;
+    margin-bottom : 61px;
+}
+
+.smoothies__imagesmothies {
+    width           : 966px;
+    height          : 389px;
+    background-color: #f6edde;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    margin-bottom   : 107px;
+}
+
+.imagesmothies__pictures {
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.row-first {
+    background-color: white;
+    width           : 240px;
+    height          : 181px;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : space-between;
+}
+
+.row-second {
+    background-color: white;
+    width           : 240px;
+    height          : 206px;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : space-between;
+}
+
+.imagesmothies__img {
+    margin-top: 27px;
+}
+
+.imagesmothies__caption {
+    font-family : Muli;
+    font-size   : 25px;
+    font-weight : 800;
+    font-stretch: normal;
+    font-style  : normal;
+
+    letter-spacing: -0.5px;
+    text-align    : center;
+    color         : #f2612d;
+    margin-bottom : 39px;
+}
+
+/*<section class="about">*/
+.about {
+    width           : 100%;
+    max-width       : 1920px;
+    height          : 800px;
+    background-color: #14826f;
+    display         : flex;
+}
+
+.picture__img {
+    margin-top : 64px;
+    margin-left: 143px;
+    /*border   : solid 1px red;*/
+}
+
+.about__descripton {
+    width      : 588px;
+    margin-left: 142px;
+    margin-top : 50px;
+}
+
+.descripton-header {
+    font-family   : Muli;
+    font-size     : 55px;
+    font-weight   : 800;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.09;
+    letter-spacing: -1.1px;
+    text-align    : left;
+    color         : #ffffff;
+    position      : relative;
+
+}
+
+
+
+h2.descripton-header span {
+    color: #cae941;
+}
+
+.descripton-header::after {
+    content   : "";
+    background: url(../images/list/Line.png);
+    width     : 450px;
+    height    : 13px;
+    position  : absolute;
+    right     : 66px;
+    bottom    : -8px;
+    display   : block;
+
+}
+
+.descripton-header {
+    margin-bottom: 47px;
+}
+
+.descripton__list li {
+    list-style-position: inside;
+    list-style-image   : url(../images/list/marker.png);
+    font-family        : Muli;
+    font-size          : 21px;
+    font-weight        : 400;
+    font-stretch       : normal;
+    font-style         : normal;
+    line-height        : 1.05;
+    letter-spacing     : normal;
+    color              : #ffffff;
+    margin-bottom      : 10px;
+}
+
+
+
+descripton__list span {
+    font-family   : Muli;
+    font-size     : 21px;
+    font-weight   : 800;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.05;
+    letter-spacing: normal;
+    color         : #ffffff;
+}
+
+
+
+
+
+/*<section class="products">*/
+
+.ourstory__picture {
+    border: solid 1px red;
+}
+
+
+
+/*<section class="instagram">*/
+
+.instagram__link {
+    border: solid 1px red;
+}
+
+.headeryellow {
+    font-family: Muli-Regular;
+    color      : #f7ae3b;
+}
+
+
+
+.products {
+    background-color: #c3481a;
+}
+
+/*.instagram {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #cccccc
+}*/
+
+
+
+.lot01 {
+    background-color: #632b1c
+}
+
+.lot02 {
+    background-color: #198370
+}
+
+.lot03 {
+    background-color: #fab23d
+}
+
+.lot04 {
+    background-color: #c0481a
+}
+
+.testimonials {
+    background-color: #632b1c;
+}
+
+.instagram__post {
+    /*display: flex;*/
+}
+
+footer {
+    width    : 100%;
+    max-width: 1920px;
+}
+
+.footer-top {
+    width           : 100%;
+    height          : 372px;
+    background-image: url(../images/images/footer-main.png);
+    display         : flex;
+    align-items     : center;
+}
+
+.footer-top__content {
+    width          : 100%;
+    margin-left    : 100px;
+    margin-right   : 100px;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.information {
+    width          : 159px;
+    height         : 185px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+}
+
+.h3 {
+
+    font-family   : Muli;
+    font-size     : 26px;
+    font-weight   : 800;
+    font-stretch  : normal;
+    font-style    : normal;
+    letter-spacing: -0.52px;
+    color         : #ffffff;
+}
+
+.information__list-item {
+    list-style-type: none;
+}
+
+.information__list-link {
+    font-family    : Muli-Regular;
+    font-size      : 18px;
+    font-weight    : bold;
+    font-stretch   : normal;
+    font-style     : normal;
+    line-height    : 1.94;
+    letter-spacing : -0.36px;
+    text-align     : left;
+    color          : #6d450c;
+    text-decoration: none;
+}
+
+.copyright {
+    width           : 100%;
+    height          : 60px;
+    background-image: url(../images/images/footer-holder.png);
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.copyright__main {
+    font-family   : Muli;
+    font-size     : 13px;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    letter-spacing: 0.26px;
+    color         : #af8a82;
+}
+
+#button-up {
+    display            : none;
+    opacity            : 0.5;
+    /*filter           :alpha(opacity=50);*/
+    position           : fixed;
+    right              : 100px;
+    bottom             : 36px;
+    width              : 50px;
+    height             : 50px;
+    border-radius      : 10%;
+    background         : #f2662f;
+    background-image   : url(../images/icons/Top.png);
+    background-repeat  : no-repeat;
+    background-position: center;
+    transition         : .3s;
+}
+
+#button-up:hover {
+    cursor    : pointer;
+    opacity   : 1;
+    filter    : alpha(opacity=100);
+    transition: .2s;
+}
