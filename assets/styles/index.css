@@ -181,6 +181,7 @@ header {
     height          : 800px;
     background-color: #14826f;
     display         : flex;
+    z-index: 2;
 }
 
 .picture__img {
@@ -209,9 +210,7 @@ header {
 
 }
 
-
-
-h2.descripton-header span {
+.descripton-header span {
     color: #cae941;
 }
 
@@ -245,9 +244,7 @@ h2.descripton-header span {
     margin-bottom      : 10px;
 }
 
-
-
-descripton__list span {
+.descripton__list span {
     font-family   : Muli;
     font-size     : 21px;
     font-weight   : 800;
@@ -258,11 +255,85 @@ descripton__list span {
     color         : #ffffff;
 }
 
+.descripton__list :last-child {
+    margin-bottom: 50px;
+}
 
+.about__btn {
+    width         : 380px;
+    height        : 60px;
+    border-radius : 30px;
+    font-family   : Muli;
+    font-size     : 21px;
+    font-weight   : 800;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.05;
+    letter-spacing: normal;
+    text-align    : center;
+    color         : #ffffff;
+    border        : 2px solid #f7ae3b;
+    background    : #14826f;
+}
 
+.about__btn::after {
+    content           : url(../images/list/Arrow.png);
+    /*background-image: url(../images/list/Arrow.png);*/
+    width             : 30px;
+    height            : 16px;
+    margin-right      : 39px;
+    /*display         : block;*/
+}
 
+.about__btn:hover {
+    cursor: pointer;
+}
 
 /*<section class="products">*/
+.products {
+    max-width      : 1920px;
+    height         : 720px;
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.products__item {
+    width : 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 129px;
+}
+
+.lot_1 {
+    background-color: #632b1c
+}
+
+.lot_2 {
+    background-color: #198370
+}
+
+.lot_3 {
+    background-color: #fab23d
+}
+
+.lot_4 {
+    background-color: #c0481a
+}
+.item__caption {
+    font-family: Muli;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.92;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
 
 .ourstory__picture {
     border: solid 1px red;
@@ -283,9 +354,8 @@ descripton__list span {
 
 
 
-.products {
-    background-color: #c3481a;
-}
+
+
 
 /*.instagram {
     width: 100%;
@@ -293,23 +363,15 @@ descripton__list span {
     background-color: #cccccc
 }*/
 
+.ourstory {
+    width     : 100%;
+    max-width : 1920px;
+    height    : 881px;
+    background: green;
 
-
-.lot01 {
-    background-color: #632b1c
 }
 
-.lot02 {
-    background-color: #198370
-}
 
-.lot03 {
-    background-color: #fab23d
-}
-
-.lot04 {
-    background-color: #c0481a
-}
 
 .testimonials {
     background-color: #632b1c;
