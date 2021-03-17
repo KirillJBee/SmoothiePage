@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Muli-Bold;
-    src: url(../fonts/Muli-Bold.ttf);
+    font-family: Muli;
+    src: url(../fonts/Muli-Regular.woff);
 }
 
 @font-face {
-    font-family: Muli;
-    src: url(../fonts/Muli-Regular.woff);
+    font-family: Muli-Semi-BoldItalic;
+    src: url(../fonts/Muli-Semi-BoldItalic.ttf);
 }
 
 @font-face {
@@ -22,6 +22,8 @@
 
 button:hover {
     cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s;
 }
 
 button:focus {
@@ -29,6 +31,8 @@ button:focus {
 }
 
 body {
+    max-width: 1920px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,14 +98,14 @@ header {
 
 .smoothies {
     background-color: white;
-    height: 870px;
+    min-height: 870px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.smoothies__header, .ourstory__header, .testimonials__header{
+.smoothies__header, .ourstory__header, .testimonials__header {
     font-family: Muli;
     font-size: 50px;
     font-weight: 800;
@@ -109,61 +113,42 @@ header {
     font-style: normal;
     line-height: 0.8;
     letter-spacing: -1px;
-    /*text-align    : center;*/
+    text-align    : center;
     color: #f7ae3b;
-    margin-top: 98px;
 }
 
 .smoothies__paragraph {
-    margin-top: 35px;
+    margin-top: 55px;
+    max-width: 958px;
+    height: auto;
+    padding: 0 20px;
     font-family: Muli;
     font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.94;
-    letter-spacing: normal;
     text-align: center;
-    width: 915px;
-    height: 140px;
-    margin-bottom: 61px;
-}
-
-.smoothies__imagesmothies {
-    width: 966px;
-    height: 389px;
-    background-color: #f6edde;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 107px;
 }
 
 .imagesmothies__pictures {
-    width: 100%;
+    max-width: 966px;
+    min-height: 402px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
+    background-color: #f6edde;
+    margin-top: 50px;
 }
 
-.row-first {
+.imagesmothies__item {
     background-color: white;
     width: 240px;
-    height: 181px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.row-second {
-    background-color: white;
-    width: 240px;
-    height: 206px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .imagesmothies__img {
     margin-top: 27px;
@@ -254,15 +239,12 @@ header {
     font-family: Muli;
     font-size: 21px;
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.05;
-    letter-spacing: normal;
     color: #ffffff;
 }
 
-.descripton__list :last-child {
-    margin-bottom: 50px;
+.descripton__list-item:last-child {
+    margin-bottom: 100px;
 }
 
 .about__btn {
@@ -272,10 +254,7 @@ header {
     font-family: Muli;
     font-size: 21px;
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.05;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff;
     border: 2px solid #f7ae3b;
@@ -296,7 +275,6 @@ header {
 .products {
     height: 720px;
     display: flex;
-    justify-content: space-between;
     z-index: 1;
 }
 
@@ -326,7 +304,7 @@ header {
 }
 
 .products__item span {
-    font-family: Muli;
+    font-family: Muli-Semi-BoldItalic;
     font-size: 21px;
     font-weight: normal;
     font-stretch: normal;
@@ -420,7 +398,7 @@ header {
 }
 
 .ourstory a {
-        font-family: Muli;
+    font-family: Muli;
     font-size: 21px;
     font-weight: 800;
     font-stretch: normal;
@@ -435,37 +413,36 @@ header {
 .ourstory__btn::after {
     content: url(../images/list/Arrow.png);
     /*content: url(../images/list/Arrow.png);*/
-position: absolute;
-width: 30px;
-height: 16px;
-top: 22px;
-right: 40px;
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    top: 22px;
+    right: 40px;
 }
-
-
 
 .ourstory__picture {
     position: relative;
 }
+
 .ourstory__picture::before {
-content: url(../images/list/Stamp.png);
-position: absolute;
-width: 290px;
-height: 216px;
-top: 22px;
-left: -166px;
+    content: url(../images/list/Stamp.png);
+    position: absolute;
+    width: 290px;
+    height: 216px;
+    top: 22px;
+    left: -166px;
 }
+
 .ourstory::before {
     content: url(../images/list/Dots.png);
-position: absolute;
-width: 410px;
-height: 301px;
-right: 58px;
-bottom: -221px;
+    position: absolute;
+    width: 410px;
+    height: 301px;
+    right: 58px;
+    bottom: -221px;
 }
 
 /*SECTION TESTIMONIALS*/
-
 
 .testimonials {
     height: 720px;
@@ -474,24 +451,59 @@ bottom: -221px;
     flex-direction: column;
     align-items: center;
 }
+
+.testimonials h2 {
+    margin-top: 117px;
+}
+
 .testimonials__header span {
     color: #f2612d;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
+
+.testimonials__contain {
+    width: 735px;
+    display: flex;
+    margin-top: 118px;
+    justify-content: space-between;
+}
+
 .ourblog {
     height: 796px;
     background-color: white;
 }
 
+blockquote {
+    width: 455px;
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff
+}
+
+cite {
+    font-family: Muli-Semi-BoldItalic;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 2.5;
+    color: #f7ae3b;
+}
 
 /*<section class="instagram">*/
+
 .instagram {
-    height: 464px;
+    height: 455px;
 }
+
 .instagram__post {
     width: 100%;
     max-width: 1920px;
-    display: flex;
+    /*display: flex;*/
 }
 
 .instagram__link {
@@ -503,10 +515,10 @@ bottom: -221px;
     color: #f7ae3b;
 }
 
-
 .instagram__post {
     /*display: flex;*/
 }
+
 /*.instagram {
     width: 100%;
     max-width: 1920px;

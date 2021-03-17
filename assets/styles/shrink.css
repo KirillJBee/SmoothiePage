@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Muli;
+    src: url(../fonts/Muli-Regular.woff);
+}
+
+@font-face {
+    font-family: Muli-Semi-BoldItalic;
+    src: url(../fonts/Muli-Semi-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Muli-ExtraBold;
+    src: url(../fonts/Muli-ExtraBold.woff);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+button:focus {
+    outline: none;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1em;
+}
+
+section {
+    width: 100%;
+    max-width: 1920px;
+}
+
+header {
+    /*background-color: #f3af38;*/
+    background: url(../images/images/header-bg-img.jpg);
+    width: 100%;
+    max-width: 1920px;
+    height: 1080px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*<section class="products">*/
+
+.products {
+    height: 720px;
+    display: flex;
+    z-index: 1;
+}
+
+.products__item {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item__img {
+    margin-top: 129px;
+}
+
+.item__caption {
+    font-family: Muli;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.92;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 34px;
+}
+
+.products__item span {
+    font-family: Muli-Semi-BoldItalic;
+    font-size: 21px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.products__item button {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background: transparent;
+    margin-top: 65px;
+}
+
+.products__item a {
+    font-family: Muli;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.05;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.lot_1 {
+    background-color: #632b1c
+}
+
+.lot_2 {
+    background-color: #198370
+}
+
+.lot_3 {
+    background-color: #fab23d
+}
+
+.lot_4 {
+    background-color: #c0481a
+}
+
+
+

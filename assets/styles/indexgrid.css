@@ -1,105 +1,86 @@
 @font-face {
     font-family: Muli-Bold;
-    src        : url(../fonts/Muli-Bold.ttf);
+    src: url(../fonts/Muli-Bold.ttf);
 }
 
 @font-face {
     font-family: Muli;
-    src        : url(../fonts/Muli-Regular.woff);
+    src: url(../fonts/Muli-Regular.woff);
 }
 
 @font-face {
     font-family: Muli-ExtraBold;
-    src        : url(../fonts/Muli-ExtraBold.woff);
+    src: url(../fonts/Muli-ExtraBold.woff);
 }
 
 * {
-    padding   : 0px;
-    margin    : 0px;
-    border    : 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
     box-sizing: border-box;
 }
 
 body {
-    display       : flex;
+    display: flex;
     flex-direction: column;
-    align-items   : center;
+    align-items: center;
 }
-
-
 
 li {
     display: inline;
 }
 
-
-
 /*<section class="smoothies">*/
 
 .smoothies {
     background-color: white;
-    width           : 100%;
-    max-width       : 1920px;
-    height          : 870px;
-    display         : flex;
-    flex-direction  : column;
-    align-items     : center;
+    width: 100%;
+    max-width: 1920px;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .smoothies__header {
-    font-family   : Muli;
-    font-size     : 50px;
-    font-weight   : 800;
-    font-stretch  : normal;
-    font-style    : normal;
-    line-height   : 0.8;
+    font-family: Muli;
+    font-size: 50px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
     letter-spacing: -1px;
-    text-align    : center;
-    color         : #f7ae3b;
-    margin-top    : 98px;
+    text-align: center;
+    color: #f7ae3b;
+    margin-top: 98px;
 }
 
 .smoothies__paragraph {
     margin-top: 55px;
-    font-family   : Muli;
-    font-size     : 18px;
-    font-weight   : normal;
-    font-stretch  : normal;
-    font-style    : normal;
-    line-height   : 1.94;
-    letter-spacing: normal;
-    text-align    : center;
-    width         : 915px;
-    height        : 150px;
-}
-
-.smoothies__imagesmothies {
-    width: 966px;
-    height: 389px;
-    background-color:#f6edde;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 958px;
+    height: auto;
+    padding: 0 20px;
+    font-family: Muli;
+    font-size: 18px;
+    line-height: 1.94;
+    text-align: center;
 }
 
 .imagesmothies__pictures {
-    width: 100%;
+    max-width: 966px;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
+    background-color: #f6edde;
+    margin-top: 50px;
 }
-.row-first {
+
+.imagesmothies__item {
     background-color: white;
     width: 240px;
-    height: 181px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.row-second {
-    background-color: white;
-    width: 240px;
-    height: 206px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,25 +90,26 @@ li {
 .imagesmothies__img {
     margin-top: 27px;
 }
+
 .imagesmothies__caption {
     font-family: Muli;
-  font-size: 25px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  
-  letter-spacing: -0.5px;
-  text-align: center;
-  color: #f2612d;
-  margin-bottom: 39px;
+    font-size: 25px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #f2612d;
+    margin-bottom: 39px;
 }
 
 /*<section class="about">*/
 
-.descripton__list-item{
+.descripton__list-item {
     display: block;
     list-style-image: url(../images/list/marker.png);
 }
+
 .descripton__list {
     list-style-image: url(../images/list/marker.png);
 }
