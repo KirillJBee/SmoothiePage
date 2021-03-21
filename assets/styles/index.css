@@ -14,11 +14,20 @@
 }
 
 * {
-    padding   : 0px;
-    margin    : 0px;
-    border    : 0px;
-    box-sizing: border-box;
+    padding    : 0px;
+    margin     : 0px;
+    border     : 0px;
+    box-sizing : border-box;
+    line-height: 1em;
 }
+
+* body {
+    background-color: darkgray;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+}
+
 
 button:hover {
     cursor    : pointer;
@@ -36,18 +45,12 @@ button:focus {
     outline: none;
 }*/
 
-body {
-    max-width     : 1920px;
-    margin        : 0 auto;
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
-    line-height   : 1em;
-}
+
 
 section {
     width    : 100%;
     max-width: 1920px;
+    margin   : 0 auto;
 }
 
 header {
@@ -561,44 +564,44 @@ article span {
     color      : #1e1e1e;
 }
 
-
-
-
-
-/*<section class="instagram">*/
+/*SECTION INSTAGRAM*/
 
 .instagram {
-    height: 455px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+.instagram__link {
+        margin-bottom: 45px;
+    font-family    : Muli;
+    font-size      : 24px;
+    font-weight    : 800;
+    text-decoration: none;
+    letter-spacing: -0.48px;
+    color: #0aa566;
+    display: flex;
+    align-items: center;
 }
 
 .instagram__post {
     width    : 100%;
     max-width: 1920px;
-    /*display: flex;*/
+    display  : flex;
+    margin-bottom: 10px;
+}
+.post__item {
+    width: 20%;
+    height: auto;
 }
 
-.instagram__link {
-    border: solid 1px red;
-}
 
-.headeryellow {
-    font-family: Muli-Regular;
-    color      : #f7ae3b;
-}
-
-.instagram__post {
-    /*display: flex;*/
-}
-
-/*.instagram {
+.post__img {
     width: 100%;
-    max-width: 1920px;
-    background-color: #cccccc
-}*/
-
-
-
-
+    height: auto;
+}
 
 footer {
     width    : 100%;
@@ -616,17 +619,15 @@ footer {
 }
 
 .footer-top__content {
-    width    : 100%;
-    max-width: 1720px;
-    height: auto;
-    padding-top: 80px;
-    margin: 0 auto;
-    display      : flex;
-    justify-content  : space-between;
+    width          : 100%;
+    max-width      : 1720px;
+    height         : auto;
+    padding-top    : 80px;
+    margin         : 0 auto;
+    display        : flex;
+    justify-content: space-between;
 
 }
-
-
 
 .footer__header {
     font-family   : Muli;
@@ -634,7 +635,7 @@ footer {
     font-weight   : 800;
     letter-spacing: -0.52px;
     color         : #ffffff;
-    margin-bottom: 40px;
+    margin-bottom : 40px;
 
 }
 
