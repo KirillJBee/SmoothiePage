@@ -8,16 +8,17 @@
     max-width: 1600px;
     height: auto;
     background: cornflowerblue;
+    border: 1px solid green;
 }
 .block2 {
     width: 100%;
     max-width: 1600px;
-    height: 500px;
+    border: 1px solid red;
     background: cornsilk;
 }
 .box {
     width: 100px;
     height: 100px;
-    background: coral;
+    background: rgb(206, 55, 0);
     margin: 50px auto;
 }
