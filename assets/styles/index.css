@@ -502,6 +502,7 @@ cite {
 }
 
 /*SECTION OURBLOG*/
+
 .ourblog {
     min-height: 870px;
 
@@ -606,39 +607,35 @@ footer {
 }
 
 .footer-top {
-    width: 100%;
-
-    background-image: url(../images/images/footer-main.png);
-    display         : flex;
-    align-items     : center;
-    flex-wrap       : wrap;
+    width             : 100%;
+    height            : 372px;
+    background-image  : url(../images/images/footer-main.png);
+    /*display         : flex;
+    align-items       : center;
+    flex-wrap         : wrap;*/
 }
 
 .footer-top__content {
-    width            : 100%;
-    max-width        : 1720px;
-    margin           : 0 100px;
-    display          : flex;
-    /*align-items    : center;*/
+    width    : 100%;
+    max-width: 1720px;
+    height: auto;
+    padding-top: 80px;
+    margin: 0 auto;
+    display      : flex;
     justify-content  : space-between;
-}
-
-.footer-top__content-information {
-    width     : auto;
-    height    : auto;
-    margin-top: 80px;
 
 }
+
+
 
 .footer__header {
     font-family   : Muli;
     font-size     : 26px;
     font-weight   : 800;
-    font-stretch  : normal;
-    font-style    : normal;
     letter-spacing: -0.52px;
     color         : #ffffff;
-    margin-bottom : 40px;
+    margin-bottom: 40px;
+
 }
 
 .information__list-item {
@@ -655,11 +652,7 @@ footer {
     text-decoration: none;
 }
 
-.footer-top__content-payments {
-    width     : auto;
-    height    : auto;
-    margin-top: 80px;
-}
+
 
 .footer-top__content-payments div {
     display      : flex;
@@ -671,11 +664,7 @@ footer {
     margin-right: 20px;
 }
 
-.footer-top__content-subscribe {
-    width     : auto;
-    height    : auto;
-    margin-top: 80px;
-}
+
 
 .footer-top__content-subscribe input {
     background         : white;
@@ -703,21 +692,68 @@ input[type="email"]::placeholder {
     color: #6d450c;
 }
 
-.footer-top__social-header {
-    font-family: Muli;
-  font-size: 18px;
-  font-weight: 800; 
-  letter-spacing: -0.36px;
-  color: #6d450c;
-  text-transform: uppercase;
-}
-.footer-top__social-item {
-    display: inline-block;
-}
-.facebook {
-    background-image: ;
+/*.footer-top__social {
+    d*/
+.footer-top__social {
+    margin-top     : 15px;
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-end;
+    position       : relative;
 }
 
+.footer-top__social-header {
+    font-family   : Muli;
+    font-size     : 18px;
+    font-weight   : 800;
+    letter-spacing: -0.36px;
+    color         : #6d450c;
+    text-transform: uppercase;
+    display       : inline-block;
+    margin-left   : 20px;
+
+}
+
+.footer-top__social-list {
+    width          : 120px;
+    height         : 26px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    margin-left    : 45px;
+    margin-right   : 50px;
+}
+
+.footer-top__social-item {
+    display    : inline-block;
+    margin-left: 30px;
+}
+
+.footer-top__social-item:first-child {
+    margin-left: 0px;
+}
+
+
+.footer-top__social-link {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.footer-top__social::before {
+    content   : url(../images/list/ArrowFollowUs.png);
+    /*position: absolute;*/
+    /*left    : 0px;
+    bottom    : 0px;*/
+}
+
+
+
+
+/*.footer-top__social-link:hover {
+    transform : scale(1.1);
+  transition: all 0.2s;
+}*/
 
 .copyright {
     width           : 100%;

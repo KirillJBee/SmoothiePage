@@ -1,0 +1,230 @@
+@font-face {
+    font-family: Muli;
+    src        : url(../fonts/Muli-Regular.woff);
+}
+
+@font-face {
+    font-family: Muli-Semi-BoldItalic;
+    src        : url(../fonts/Muli-Semi-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Muli-ExtraBold;
+    src        : url(../fonts/Muli-ExtraBold.woff);
+}
+
+* {
+    padding   : 0px;
+    margin    : 0px;
+    border    : 0px;
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor    : pointer;
+    transform : scale(1.1);
+    transition: all 0.2s;
+}
+
+input,
+button:focus {
+    outline: none;
+}
+
+
+/*input:focus {
+    outline: none;
+}*/
+
+/*body {
+    max-width     : 1920px;
+    margin        : 0 auto;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    line-height   : 1em;
+}*/
+
+
+
+
+
+
+
+footer {
+    width    : 100%;
+    max-width: 1920px;
+    height   : auto;
+}
+
+.footer-top {
+    width             : 100%;
+    height            : 372px;
+    background-image  : url(../images/images/footer-main.png);
+    /*display         : flex;
+    align-items       : center;
+    flex-wrap         : wrap;*/
+}
+
+.footer-top__content {
+    width    : 100%;
+    max-width: 1720px;
+    height: auto;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+        display      : flex;
+        justify-content  : space-between;
+        align-items: flex-start;
+}
+
+
+
+.footer__header {
+    font-family   : Muli;
+    font-size     : 26px;
+    font-weight   : 800;
+    letter-spacing: -0.52px;
+    color         : #ffffff;
+    margin-bottom: 40px;
+
+}
+
+.information__list-item {
+    list-style-type: none;
+    margin-bottom  : 23px;
+}
+
+.information__list-link {
+    font-family    : Muli;
+    font-size      : 18px;
+    font-weight    : bold;
+    letter-spacing : -0.36px;
+    color          : #6d450c;
+    text-decoration: none;
+}
+
+
+.footer-top__content-payments div {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 25px;
+}
+
+.payments__img {
+    margin-right: 20px;
+}
+
+.footer-top__content-subscribe {
+    width     : auto;
+    height    : auto;
+    
+}
+
+.footer-top__content-subscribe input {
+    background         : white;
+    width              : 500px;
+    height             : 60px;
+    border-radius      : 30px;
+    font-family        : Muli;
+    font-size          : 17px;
+    font-weight        : bold;
+    letter-spacing     : -0.34px;
+    background-image   : url(../images/list/envelope.svg);
+    background-repeat  : no-repeat;
+    background-position: 4% center;
+    padding-left       : 65px;
+    color              : teal;
+
+    /*text-align: left;*/
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input[type="email"]::placeholder {
+    color: #6d450c;
+}
+
+/*.footer-top__social {
+    d*/
+.footer-top__social {
+    margin-top     : 15px;
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-end;
+    position       : relative;
+}
+
+.footer-top__social-header {
+    font-family   : Muli;
+    font-size     : 18px;
+    font-weight   : 800;
+    letter-spacing: -0.36px;
+    color         : #6d450c;
+    text-transform: uppercase;
+    display       : inline-block;
+    margin-left   : 20px;
+
+}
+
+.footer-top__social-list {
+    width          : 120px;
+    height         : 26px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    margin-left    : 45px;
+    margin-right   : 50px;
+}
+
+.footer-top__social-item {
+    display    : inline-block;
+    margin-left: 30px;
+}
+
+.footer-top__social-item:first-child {
+    margin-left: 0px;
+}
+
+
+.footer-top__social-link {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.footer-top__social::before {
+    content   : url(../images/list/ArrowFollowUs.png);
+    /*position: absolute;*/
+    /*left    : 0px;
+    bottom    : 0px;*/
+}
+
+
+
+
+/*.footer-top__social-link:hover {
+    transform : scale(1.1);
+  transition: all 0.2s;
+}*/
+
+.copyright {
+    width           : 100%;
+    height          : auto;
+    background-image: url(../images/images/footer-holder.png);
+    display         : flex;
+    justify-content : center;
+}
+
+.copyright__main {
+    font-family   : Muli;
+    font-size     : 13px;
+    font-weight   : normal;
+    font-stretch  : normal;
+    font-style    : normal;
+    letter-spacing: 0.26px;
+    color         : #af8a82;
+    margin        : 26px 0px 21px 0px;
+}
