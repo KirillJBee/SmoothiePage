@@ -28,6 +28,15 @@
     align-items: center;
 }
 
+button {
+    height: 60px;
+    border-radius: 30px;
+    font-family: Muli;
+    font-size: 21px;
+    font-weight: 800;
+    text-align: left;
+}
+
 button:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -38,17 +47,14 @@ input, button:focus {
     outline: none;
 }
 
-section {
+body>* {
     width: 100%;
     max-width: 1920px;
-    margin: 0 auto;
 }
 
 header {
     /*background-color: #f3af38;*/
     background: url(../images/images/header-bg-img.jpg);
-    width: 100%;
-    max-width: 1920px;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -84,22 +90,43 @@ header {
 
 .main-menu__link {
     font-family: Muli;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.32px;
-    color: #ffffff;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
 
+.personal__list {
+    display: flex;
+    align-items: center;
+}
+
 .personal__item {
     display: inline-block;
     margin-left: 45px;
+    position: relative;
 }
 
 .personal__item:first-child {
     margin-left: 0px;
+}
+
+.personal__item-counter {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    font-family: Muli;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    color: #000000;
+    left: 22px;
+    top: -12px;
+    text-align: center;
+    line-height: 18px;
 }
 
 .social__item {
@@ -137,13 +164,17 @@ header form {
     font-weight: 800;
     text-align: center;
     color: #ffffff;
-    
 }
 
 /*<section class="smoothies">*/
+
+.smoothies__header {
+    margin-top: 100px;
+    margin-bottom: 55px;
+}
+
 .smoothies {
     background-color: white;
-    min-height: 870px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,7 +182,6 @@ header form {
 }
 
 .smoothies__paragraph {
-    margin-top: 55px;
     max-width: 958px;
     height: auto;
     padding: 0 20px;
@@ -159,6 +189,8 @@ header form {
     font-size: 18px;
     line-height: 1.94;
     text-align: center;
+    margin-bottom: 90px;
+
 }
 
 .imagesmothies__pictures {
@@ -169,7 +201,6 @@ header form {
     justify-content: space-between;
     align-content: space-between;
     background-color: #f6edde;
-    margin-top: 50px;
 }
 
 .imagesmothies__item {
@@ -203,16 +234,15 @@ header form {
 .about {
     width: 100%;
     max-width: 1920px;
-    height: 800px;
     background-color: #14826f;
     display: flex;
     z-index: 2;
 }
 
 .picture__img {
-    margin-top: 64px;
     margin-left: 143px;
-    /*border   : solid 1px red;*/
+    position: relative;
+    top: 90px;
 }
 
 .about__descripton {
@@ -222,12 +252,10 @@ header form {
 }
 
 .descripton-header {
+    margin-top: 33px;
     font-family: Muli;
     font-size: 55px;
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.09;
     letter-spacing: -1.1px;
     text-align: left;
     color: #ffffff;
@@ -281,25 +309,22 @@ header form {
 
 .about__btn {
     width: 380px;
-    height: 60px;
-    border-radius: 30px;
-    font-family: Muli;
-    font-size: 21px;
-    font-weight: 800;
     line-height: 1.05;
-    text-align: center;
     color: #ffffff;
     border: 2px solid #f7ae3b;
     background: #14826f;
+    position: absolute;
+    padding-left: 30px;
 }
 
 .about__btn::after {
-    content: url(../images/list/Arrow.png);
-    /*background-image: url(../images/list/Arrow.png);*/
+    content: "";
+    background-image: url('../images/list/ArrowRightOrangeBig.png');
     width: 30px;
     height: 16px;
-    margin-right: 39px;
-    /*display         : block;*/
+    position: absolute;
+    top: 22px;
+    right: 40px;
 }
 
 /*<section class="products">*/
@@ -349,16 +374,22 @@ header form {
 
 .products__btn-buy {
     width: 204px;
-    height: 60px;
-    border-radius: 30px;
     border: 2px solid white;
     background: transparent;
     margin-top: 65px;
-    font-family: Muli;
-    font-size: 21px;
-    font-weight: 800;
-    text-align: center;
     color: #ffffff;
+    padding-left: 36px;
+    position: relative;
+}
+
+.products__btn-buy::after {
+    content: "";
+    background-image: url('../images/list/ArrowWhiteBtn.png');
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    top: 22px;
+    right: 36px;
 }
 
 .products__item a {}
@@ -411,29 +442,24 @@ header form {
     line-height: 1.94;
     letter-spacing: normal;
     text-align: left;
+    margin-bottom: 60px;
 }
 
-.ourstory button {
+.ourstory__btn {
     width: 300px;
-    height: 60px;
-    border-radius: 30px;
-    border: 2px solid white;
     background: #0aa566;
-    margin-top: 65px;
     position: relative;
-    font-family: Muli;
-    font-size: 21px;
-    font-weight: 800;
     line-height: 1.05;
     color: #ffffff;
+    padding-left: 30px;
 }
 
 .ourstory__btn::after {
-    content: url(../images/list/Arrow.png);
-    /*content: url(../images/list/Arrow.png);*/
-    position: absolute;
+    content: "";
+    background-image: url('../images/list/ArrowRightOrangeBig.png');
     width: 30px;
     height: 16px;
+    position: absolute;
     top: 22px;
     right: 40px;
 }
@@ -631,11 +657,6 @@ article span {
 
 /*SECTION FOOTER*/
 
-footer {
-    width: 100%;
-    max-width: 1920px;
-}
-
 .footer-top {
     width: 100%;
     background-image: url(../images/images/footer-main.png);
@@ -799,6 +820,7 @@ input[type="email"]::placeholder {
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
+    z-index: 10;
 }
 
 #button-up:hover {
