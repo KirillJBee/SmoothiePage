@@ -65,13 +65,12 @@ header {
 .ourstory__header,
 .testimonials__header,
 .ourblog__header {
-    font-family     : Muli;
-    font-size       : 50px;
-    font-weight     : 800;
-    line-height     : 0.8;
-    letter-spacing  : -1px;
-    /*text-align    : center;*/
-    color           : #f7ae3b;
+    font-family   : Muli;
+    font-size     : 50px;
+    font-weight   : 800;
+    line-height   : 0.8;
+    letter-spacing: -1px;
+    color         : #f7ae3b;
 }
 
 .header__top {
@@ -100,6 +99,10 @@ header {
     text-decoration: none;
     color          : white;
     text-transform : uppercase;
+}
+
+.personal {
+    position: relative;
 }
 
 .personal__list {
@@ -134,13 +137,23 @@ header {
     line-height   : 18px;
 }
 
+.personal::after {
+    content         : "";
+    width           : 50px;
+    height          : 2px;
+    background-color: #ffd68f;
+    position        : absolute;
+    right           : -100px;
+    bottom          : 13px;
+}
+
 .social__item {
     display    : inline-block;
     margin-left: 10px;
 }
 
 .social__item:first-child {
-    margin-left: 0px;
+    margin-left: 40px;
 }
 
 .social__link {
@@ -153,6 +166,8 @@ header {
     border-radius  : 50%;
     background     : white;
 }
+
+
 
 header form {
     display        : flex;
@@ -178,7 +193,7 @@ header form {
     flex-direction  : column;
     align-items     : center;
     justify-content : space-between;
-    
+
 }
 
 .smoothies__header {
@@ -187,16 +202,14 @@ header form {
 }
 
 .smoothies__paragraph {
-    max-width: 915px;
+    max-width  : 915px;
     font-family: Muli;
     font-size  : 18px;
     line-height: 1.94;
     text-align : center;
     color      : #1e1e1e;
-    margin: 0 auto 61px auto;
+    margin     : 0 auto 61px auto;
 }
-
-
 
 .imagesmothies__pictures {
     display              : grid;
@@ -205,7 +218,7 @@ header form {
     grid-column-gap      : 2px;
     grid-row-gap         : 2px;
     background-color     : #f6edde;
-    margin-bottom: 100px;
+    margin-bottom        : 100px;
 }
 
 .imagesmothies__item {
@@ -234,8 +247,6 @@ header form {
 /*<section class="about">*/
 
 .about {
-    width           : 100%;
-    max-width       : 1920px;
     background-color: #14826f;
     display         : flex;
     z-index         : 2;
@@ -289,12 +300,11 @@ header form {
     font-family        : Muli;
     font-size          : 21px;
     font-weight        : 400;
-    font-stretch       : normal;
-    font-style         : normal;
-    line-height        : 1.05;
-    letter-spacing     : normal;
-    color              : #ffffff;
-    margin-bottom      : 10px;
+
+    line-height: 1.05;
+
+    color        : #ffffff;
+    margin-bottom: 10px;
 }
 
 .descripton__list span {
@@ -332,56 +342,53 @@ header form {
 /*<section class="products">*/
 
 .products {
-    height : 720px;
     display: flex;
     z-index: 1;
 }
 
 .products__item {
-    width         : 25%;
-    height        : auto;
     display       : flex;
+    flex-basis    : 25%;
     flex-direction: column;
     align-items   : center;
 }
 
 .item__img {
-    margin-top: 129px;
+    margin-top   : 130px;
+    margin-bottom: 34px;
 }
 
 .item__caption {
-    font-family   : Muli;
-    font-size     : 24px;
-    font-weight   : bold;
-    font-stretch  : normal;
-    font-style    : normal;
-    line-height   : 0.92;
-    letter-spacing: normal;
-    text-align    : center;
-    color         : #ffffff;
-    margin-top    : 34px;
+    font-family  : Muli;
+    font-size    : 24px;
+    font-weight  : bold;
+    line-height  : 0.92;
+    text-align   : center;
+    color        : #ffffff;
+    margin-bottom: 15px;
+
+
 }
 
 .products__item span {
-    font-family   : Muli-Semi-BoldItalic;
-    font-size     : 21px;
-    font-weight   : normal;
-    font-stretch  : normal;
-    font-style    : italic;
-    letter-spacing: normal;
-    text-align    : center;
-    color         : #ffffff;
-    margin-top    : 15px;
+    font-family: Muli-Semi-BoldItalic;
+    font-size  : 21px;
+
+    font-style: italic;
+
+    text-align   : center;
+    color        : #ffffff;
+    margin-bottom: 65px;
 }
 
 .products__btn-buy {
-    width       : 204px;
-    border      : 2px solid white;
-    background  : transparent;
-    margin-top  : 65px;
-    color       : #ffffff;
-    padding-left: 36px;
-    position    : relative;
+    width        : 204px;
+    border       : 2px solid white;
+    background   : transparent;
+    color        : #ffffff;
+    padding-left : 36px;
+    position     : relative;
+    margin-bottom: 80px;
 }
 
 .products__btn-buy::after {
@@ -435,16 +442,14 @@ header form {
 
 .ourstory__paragraph {
     /*display: inline;*/
-    margin-top    : 43px;
-    font-family   : Muli;
-    font-size     : 18px;
-    font-weight   : normal;
-    font-stretch  : normal;
-    font-style    : normal;
-    line-height   : 1.94;
-    letter-spacing: normal;
-    text-align    : left;
-    margin-bottom : 60px;
+    margin-top : 43px;
+    font-family: Muli;
+    font-size  : 18px;
+
+    line-height: 1.94;
+
+    text-align   : left;
+    margin-bottom: 60px;
 }
 
 .ourstory__btn {
@@ -854,9 +859,6 @@ input[type="email"]::placeholder {
 .copyright__main {
     font-family   : Muli;
     font-size     : 13px;
-    font-weight   : normal;
-    font-stretch  : normal;
-    font-style    : normal;
     letter-spacing: 0.26px;
     color         : #af8a82;
     margin        : 26px 0px 21px 0px;
